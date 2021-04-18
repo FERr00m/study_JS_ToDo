@@ -39,7 +39,7 @@ const render = function() {
 
     btnTodoRemove.addEventListener('click', function(e) {
       let position = todoData.indexOf(item, 0);
-      todoData.pop(position);
+      todoData.splice(position, 1);
       render();
     });
   });
